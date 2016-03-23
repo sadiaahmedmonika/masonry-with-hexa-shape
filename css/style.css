@@ -1,0 +1,139 @@
+
+
+/* ---- masonry ---- */
+.masonry{
+	padding:50px 0 450px 0;
+}
+.isotope-filters {
+	display: table;
+	margin: 20px  auto;
+}
+.isotope-filters  button {
+	border:none;
+	margin: 2px; 
+	line-height: 30px;
+	padding: 0 20px;
+	cursor: pointer;
+	color:#fff;
+	background: #000;
+}
+.isotope-filters  button:focus {
+	outline: none;
+	outline-style: none;
+	outline-offset:0; 
+}
+.isotope-filters  button.active {
+	background: #E04343;
+	color:#fff;
+}
+.isotope-filters  button:hover {
+	background: #E04343;
+	color:#fff;
+}
+.isotope {
+	background: none;
+}
+.item-bg{
+	background: #E04343;
+}
+/* clear fix */
+.isotope:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/* ---- .item ---- */
+.item {
+	float: left;
+	border: 5px solid #fff;
+	overflow: hidden;
+}
+.isotop-overlay{
+	position:absolute;
+	background:rgba(0,0,0,.3);
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0;
+	transform-origin:top left;
+	-webkit-transform:rotate(90deg);
+}
+.item:hover .isotop-overlay{
+	opacity:1;
+	-webkit-transform:rotate(0deg);
+}
+.expand{
+	position:absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	margin-top:-25px;
+	text-align:center;
+	opacity:0;
+}
+.item:hover .expand{
+	opacity:1;
+}
+.hexa{
+	position:relative;
+	height:25px;
+	width:46px;
+	display:inline-block;
+	margin-top:11px;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	margin-left:10px;
+	z-index:0;
+}
+.hexa:after{
+	content:"";
+	position:absolute;
+	left:0;
+	height:25px;
+	width:45px;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	-webkit-transform:rotate(60deg);
+	z-index:-1;
+}
+.hexa:before{
+	content:"";
+	position:absolute;
+	left:0;
+	height:25px;
+	width:45px;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	-webkit-transform:rotate(120deg);
+	z-index:-1;
+}
+.hexa:hover:before,
+.hexa:hover:after,
+.hexa:hover{
+	background-color:#fff;
+	border-left:1px solid #E04343;
+	border-right:1px solid #E04343;
+}
+.hexa i{
+	color:#fff;
+}
+.expand:hover .hexa i{
+	color:#E04343;
+}
+.isotop-overlay,
+.expand,
+.hexa,
+.hexa:after,
+.hexa:before,
+.hexa i{
+	-webkit-transition: all .5s ease-in;
+}
+
+
+
+
+
+
+
+
